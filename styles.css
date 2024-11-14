@@ -30,3 +30,18 @@ body {
     background-size: cover;
     background-color: hsl(180, 29%, 50%);
 }
+
+/* JOBS CONTAINER */
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-block: 80px;
+}
+
+/* JOB ITSELF */
+
+.job-itself {
+    
+}
