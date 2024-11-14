@@ -37,7 +37,6 @@ async function displayDataFromJson() {
                     </div>
                 </div>
                 <div class="job-itself-right">
-                    <button type="button" class="job-itself-right-button">Frontend</button>
                 </div>
             </fieldset>
         `;
@@ -45,6 +44,11 @@ async function displayDataFromJson() {
 
         // BUTTONS CONTAINER
         const jobItselfRightButtonsContainer = document.querySelectorAll('.job-itself-right');
-        jobItselfRightButtonsContainer.innerHTML += `<button type="button" class="job-itself-right-button">${jobData[i]}</button>`;
+        const lengtOfButtons = jobData[i].languages.length + jobData[i].tools.length + 2;
+        console.log(lengtOfButtons)
+        /* jobItselfRightButtonsContainer.innerHTML += `<button type="button" class="job-itself-right-button">${jobData[i]}</button>`; */
+        for (let secondIterator = 0; secondIterator < lengtOfButtons; secondIterator++) {
+            jobItselfRightButtonsContainer[i].innerHTML += `<button type="button" class="job-itself-right-button">${jobData[i].languages[secondIterator]}</button>`
+        };
     };
 };
