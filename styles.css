@@ -95,18 +95,34 @@ body {
 .job-itself-left-text-top {
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 15px;
 }
 
 .job-itself-text-top-company-name {
     color: hsl(180, 29%, 50%);
 }
 
+.job-itself-text-top-inner {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
 .job-itself-text-top-new {
     background-color: hsl(180, 29%, 50%);
     color: white;
     padding-block: 6px 3px;
-    padding-inline: 10px;
+    padding-inline: 8px;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.job-itself-text-top-featured {
+    background-color: hsl(180, 14%, 20%);
+    color: white;
+    padding-block: 6px 3px;
+    padding-inline: 8px;
     border-radius: 1rem;
     font-size: 1rem;
     font-weight: 600;
