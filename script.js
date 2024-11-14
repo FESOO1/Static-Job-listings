@@ -41,5 +41,10 @@ async function displayDataFromJson() {
                 </div>
             </fieldset>
         `;
+
+
+        // BUTTONS CONTAINER
+        const jobItselfRightButtonsContainer = document.querySelectorAll('.job-itself-right');
+        jobItselfRightButtonsContainer.innerHTML += `<button type="button" class="job-itself-right-button">${jobData[i]}</button>`;
     };
 };
