@@ -47,8 +47,11 @@ async function displayDataFromJson() {
         const lengtOfButtons = jobData[i].languages.length + jobData[i].tools.length + 2;
         console.log(lengtOfButtons)
         /* jobItselfRightButtonsContainer.innerHTML += `<button type="button" class="job-itself-right-button">${jobData[i]}</button>`; */
-        for (let secondIterator = 0; secondIterator < lengtOfButtons; secondIterator++) {
-            jobItselfRightButtonsContainer[i].innerHTML += `<button type="button" class="job-itself-right-button">${jobData[i].languages[secondIterator]}</button>`
-        };
+        /* for (let secondIterator = 0; secondIterator < lengtOfButtons; secondIterator++) {
+            jobItselfRightButtonsContainer[i].innerHTML += `
+                <button type="button" class="job-itself-right-button">${jobData[i].level}</button>
+                <button type="button" class="job-itself-right-button">${jobData[i].languages[secondIterator]}</button>
+            `;
+        }; */
     };
 };
