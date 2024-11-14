@@ -36,12 +36,94 @@ body {
 .jobs {
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 30px;
-    padding-block: 80px;
+    padding-block: 70px 120px;
 }
 
 /* JOB ITSELF */
 
 .job-itself {
-    
+    width: 1200px;
+    padding: 30px 40px;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* JOB ITSELF LEFT */
+
+.job-itself-left {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    height: 100%;
+}
+
+/* JOB ITSELF IMAGE */
+
+.job-itself-left-image {
+    line-height: 0;
+}
+
+/* JOB ITSELF LEFT TEXT */
+
+.job-itself-left-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+/* JOB ITSELF LEFT TEXT TOP */
+
+.job-itself-left-text-top {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.job-itself-text-top-company-name {
+    color: hsl(180, 29%, 50%);
+}
+
+/* JOB ITSELF LEFT TEXT MIDDLE */
+
+.job-itself-left-text-position {
+    color: hsl(180, 14%, 20%);
+}
+
+/* JOB ITSELF LEFT TEXT BOTTOM */
+
+.job-itself-left-text-bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    color: hsl(180, 8%, 52%);
+}
+
+.job-itself-left-text-bottom-job-info {
+    font-weight: 500;
+}
+
+.job-itself-left-text-bottom-divider {
+    border: 3px solid hsl(180, 8%, 52%);
+    border-radius: 1rem;
+}
+
+/* JOB ITSELF MOBILE IMAGE */
+
+.job-itself-mobile-image {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    display: none;
+}
+
+.job-itself-mobile-image-itself {
+    width: 100%;
+    height: 100%;
 }
