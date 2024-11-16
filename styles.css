@@ -192,3 +192,27 @@ body {
     background-color: hsl(180, 29%, 50%);
     color: white;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1300px) {
+    .job-itself {
+        width: 95%;
+    }
+}
+
+@media (max-width: 800px) {
+    .job-itself {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .job-itself-left {
+        width: 100%;
+    }
+    .job-itself-left-image {
+        display: none;
+    }
+    .job-itself-mobile-image {
+        display: unset;
+    }
+}
